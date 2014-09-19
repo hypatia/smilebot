@@ -1,8 +1,6 @@
-from twitterapi import api, debuguser
+from twitterapi import api, debuguser, debug
 import twitter
 import random
-
-debug = False
 
 followers = api.GetFollowers()
 current = random.randint(0, len(followers) - 1)

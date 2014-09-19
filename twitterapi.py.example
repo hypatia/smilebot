@@ -1,5 +1,9 @@
 import twitter
 
+# set true if you want to debug your code
+
+debug = False
+
 # a user to @reply to when you're testing
 
 debuguser = "replace_me_with_your_username"
