@@ -2,7 +2,7 @@ from twitterapi import api, debuguser
 import twitter
 import random
 
-debug = True
+debug = False
 
 followers = api.GetFollowers()
 current = random.randint(0, len(followers) - 1)
