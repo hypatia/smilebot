@@ -1,5 +1,9 @@
 import twitter
 
+# a user to @reply to when you're testing
+
+debuguser = "replace_me_with_your_username"
+
 # consumer_* is for your app, whereas access_token_* is for your user
 
 api = twitter.Api(consumer_key="CONSUMER_KEY",

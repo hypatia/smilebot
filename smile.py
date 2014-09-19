@@ -1,4 +1,4 @@
-from twitterapi import api
+from twitterapi import api, debuguser
 import twitter
 import random
 
@@ -12,7 +12,7 @@ lines = open('phrases').read().splitlines()
 myline = random.choice(lines)
 
 if debug:
-    api.PostUpdate("@hypatiadotca current user is " + followers[current].GetScreenName() + " phrase: " + myline)
+    api.PostUpdate("@" + debuguser + " current user is " + followers[current].GetScreenName() + " phrase: " + myline)
 
 else:
     api.PostUpdate("@" + followers[current].GetScreenName() + " " + myline)
